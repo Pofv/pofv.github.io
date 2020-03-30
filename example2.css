@@ -1,0 +1,32 @@
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabPage {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#Name {background-color:rgb(250,0,0);}
+#About {background-color:green;}
+#Game {background-color:rgb(0,0,250);}
+#Resume {background-color:orange;}
