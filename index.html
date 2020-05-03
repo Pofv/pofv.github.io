@@ -2,42 +2,45 @@
 
 <html>
 
-<head>
-<title>Ryan Zhu</title>
-<link rel="stylesheet" href="example2.css">
-</head>
+    <head>
+        <title>Ryan Zhu</title>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+        
 
 <body>
 
-<button class="tablink" onclick="openTab('Name', this, 'red')" id="defaultOpen">Ryan Zhu</button>
-<button class="tablink" onclick="openTab('About', this, 'green')">About</button>
-<button class="tablink" onclick="openTab('Game', this, 'blue')">Mini Game</button>
-<button class="tablink" onclick="openTab('Resume', this, 'orange')">Resume</button>
+<div class="container">
+    <p>
+        using tutorial from https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98/
+    </p>
+    <div class="calculator">
+        <div class="better_display"></div>
+      <div class="calculator__display">0</div>
 
-<div id="Name" class="tabPage">
-  <h1>Ryan Zhu</h1>
-  <p>London is the capital city of England.</p>
-</div>
+      <div class="calculator__keys">
+        <button class="key--operator" data-action="add">+</button>
+        <button class="key--operator" data-action="subtract">-</button>
+        <button class="key--operator" data-action="multiply">&times;</button>
+        <button class="key--operator" data-action="divide">÷</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+        <button data-action="decimal">.</button>
+        <button data-action="clear">AC</button>
+        <button class="key--equal" data-action="calculate">=</button>
+      </div>
+    </div>
+  </div>
 
-<div id="About" class="tabPage">
-  <h1>About</h1>
-  <p>Paris is the capital of France.</p> 
-</div>
+  <script src="calculator.js"></script>
 
-<div id="Game" class="tabPage">
-  <h1>Mini Game</h1>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<div id="Resume" class="tabPage">
-  <h1>Resume</h1>
-  <p>Oslo is the capital of Norway.</p>
-</div>
-
-
-
-<script src="example2.js"></script>
-
-</body>
-
-</html> 
+  </body>
+  </html>
